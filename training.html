@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Training</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>EAGLES FC</h2>
+
+        <nav>
+          <a href="dashboard.html">🏠 Home</a>
+          <a href="team-roster.html">👥 Team Roster</a>
+          <a href="player.html">⚙️ Player Management</a>
+          <a href="attendance.html">✅ Attendance</a>
+          <a href="match.html">📅 Matches</a>
+          <a href="training.html" class="active">🏋️ Training</a>
+          <a href="analytics.html">📊 Analytics</a>
+        </nav>
+
+        <a href="login.html" class="logout">⏻ Logout</a>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <!-- TOPBAR -->
+        <div class="topbar">
+          <input type="text" placeholder="Search sessions..." />
+          <button class="add">+ Schedule Session</button>
+        </div>
+
+        <h1>Training Sessions</h1>
+
+        <!-- TRAINING LIST -->
+        <div class="training-list">
+          <!-- CARD -->
+          <div class="training-card">
+            <div class="training-info">
+              <h3>Fitness Training</h3>
+              <p>📅 Dec 15, 2024 | ⏰ 10:00 AM</p>
+              <p>📍 Main Field</p>
+              <p>Coach: John Smith</p>
+            </div>
+
+            <div class="training-status upcoming">UPCOMING</div>
+
+            <button class="view-btn">View</button>
+          </div>
+
+          <!-- CARD -->
+          <div class="training-card">
+            <div class="training-info">
+              <h3>Tactical Session</h3>
+              <p>📅 Dec 12, 2024 | ⏰ 4:00 PM</p>
+              <p>📍 Training Ground B</p>
+              <p>Coach: Alex Brown</p>
+            </div>
+
+            <div class="training-status completed">COMPLETED</div>
+
+            <button class="view-btn">Details</button>
+          </div>
+
+          <!-- CARD -->
+          <div class="training-card">
+            <div class="training-info">
+              <h3>Recovery Session</h3>
+              <p>📅 Dec 20, 2024 | ⏰ 9:00 AM</p>
+              <p>📍 Gym Hall</p>
+              <p>Coach: Mike Adams</p>
+            </div>
+
+            <div class="training-status upcoming">UPCOMING</div>
+
+            <button class="view-btn">View</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

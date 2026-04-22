@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>EAGLES FC</h2>
+
+        <nav>
+          <a href="dashboard.html" class="active">🏠 Home</a>
+          <a href="team-roster.html">👥 Team Roster</a>
+          <a href="player.html">⚙️ Player Management</a>
+          <a href="attendance.html">✅ Attendance</a>
+          <a href="match.html">📅 Matches</a>
+          <a href="training.html">🏋️ Training</a>
+          <a href="analytics.html">📊 Analytics</a>
+        </nav>
+
+        <a href="logout.html" class="logout">⏻ Logout</a>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <!-- TOPBAR -->
+        <div class="topbar">
+          <input type="text" placeholder="Search..." />
+
+          <div class="icons">🔔 📄 ⬇️ 👤</div>
+        </div>
+
+        <!-- TITLE -->
+        <div class="title">
+          <span>🦅</span>
+          <h1>CLUB OVERVIEW</h1>
+        </div>
+
+        <!-- GRID -->
+        <div class="grid">
+          <!-- LEFT CONTENT -->
+          <div class="left">
+            <!-- CARDS -->
+            <div class="cards">
+              <div class="card">
+                <h4>NEXT MATCH</h4>
+                <p>vs Dec 18, 2024</p>
+                <div class="dots">
+                  <span class="active-dot"></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="card">
+                <h4>CURRENT STANDING</h4>
+                <p>LEAGUE 3RD PLACE</p>
+                <div class="progress">
+                  <div class="bar"></div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h4>CLAVER FITNESS</h4>
+                <p>AVERAGE <span class="green">85%</span></p>
+              </div>
+            </div>
+
+            <!-- TABLE -->
+            <div class="table-card">
+              <div class="table-header">
+                <h3>TEAM ROSTER</h3>
+                <button>+ ADD PLAYER</button>
+              </div>
+
+              <table>
+                <tr>
+                  <th>PLAYER NAME</th>
+                  <th>POSITION</th>
+                  <th>NUMBER</th>
+                  <th>AGE</th>
+                  <th>STATUS</th>
+                </tr>
+
+                <tr>
+                  <td class="player">
+                    <img src="https://i.pravatar.cc/40" />
+                    Liam Smith
+                  </td>
+                  <td>FORWARD</td>
+                  <td>#10</td>
+                  <td>28</td>
+                  <td class="fit">FIT</td>
+                </tr>
+
+                <tr>
+                  <td class="player">
+                    <img src="https://i.pravatar.cc/41" />
+                    Noah Johnson
+                  </td>
+                  <td>MIDFIELDER</td>
+                  <td>#8</td>
+                  <td>25</td>
+                  <td class="fit">FIT</td>
+                </tr>
+
+                <tr>
+                  <td class="player">
+                    <img src="https://i.pravatar.cc/42" />
+                    Olisah Brown
+                  </td>
+                  <td>DEFENDER</td>
+                  <td>#25</td>
+                  <td>25</td>
+                  <td class="injured">INJURED</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- RIGHT PANEL -->
+          <div class="right">
+            <div class="card">
+              <input type="text" placeholder="Search" />
+            </div>
+
+            <div class="card">
+              <h4>RECENT ACTIVITY</h4>
+              <p>New training session scheduled</p>
+              <p>Player contract renewed</p>
+              <p>Match highlights uploaded</p>
+            </div>
+
+            <div class="card circle">
+              <h4>PERFORMANCE</h4>
+              <div class="circle-chart">85%</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

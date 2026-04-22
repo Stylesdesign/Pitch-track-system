@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Analytics</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Chart.js (VERY IMPORTANT) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>EAGLES FC</h2>
+
+        <nav>
+          <a href="dashboard.html">HOME</a>
+          <a href="team-roster.html">TEAM ROSTER</a>
+          <a href="player.html">PLAYER MANAGEMENT</a>
+          <a href="attendance.html">ATTENDANCE</a>
+          <a href="match.html">MATCHES</a>
+          <a href="training.html">TRAINING</a>
+          <a href="analytics.html" class="active">ANALYTICS</a>
+        </nav>
+
+        <a href="login.html" class="logout">LOGOUT</a>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main">
+        <div class="topbar">
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="cards">
+          <div class="card">
+            <p>Total Matches</p>
+            <h2>24</h2>
+          </div>
+
+          <div class="card">
+            <p>Wins</p>
+            <h2 class="green">18</h2>
+          </div>
+
+          <div class="card">
+            <p>Draws</p>
+            <h2 class="yellow">4</h2>
+          </div>
+
+          <div class="card">
+            <p>Losses</p>
+            <h2 class="red">2</h2>
+          </div>
+        </div>
+
+        <!-- CHARTS -->
+        <div class="charts">
+
+  <div class="chart-box">
+    <h3>Performance Trend</h3>
+
+    <div class="fake-chart">
+      <div style="height: 60%">M1</div>
+      <div style="height: 80%">M2</div>
+      <div style="height: 50%">M3</div>
+      <div style="height: 90%">M4</div>
+    </div>
+
+  </div>
+
+  <div class="chart-box">
+    <h3>Squad Composition</h3>
+
+    <div class="fake-chart">
+      <div style="height: 70%">FW</div>
+      <div style="height: 85%">MF</div>
+      <div style="height: 65%">DF</div>
+      <div style="height: 40%">GK</div>
+    </div>
+
+  </div>
+
+</div>
+
+          <!-- PIE CHART -->
+          <div class="chart-box">
+            <h3>Squad Composition</h3>
+            <canvas id="squadChart"></canvas>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- JS -->
+    <script src="analytics.js"></script>
+  </body>
+</html>

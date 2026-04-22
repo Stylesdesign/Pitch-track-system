@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Attendance</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>EAGLES FC</h2>
+
+        <nav>
+          <a href="dashboard.html">🏠 Home</a>
+          <a href="team-roster.html">👥 Team Roster</a>
+          <a href="player.html">⚙️ Player Management</a>
+          <a href="attendance.html" class="active">✅ Attendance</a>
+          <a href="match.html">📅 Matches</a>
+          <a href="training.html">🏋️ Training</a>
+          <a href="analytics.html">📊 Analytics</a>
+        </nav>
+
+        <a href="login.html" class="logout">⏻ Logout</a>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <!-- TOP -->
+        <div class="topbar">
+          <input type="text" placeholder="Search..." />
+          <span class="date">Today: 4/21/2026</span>
+        </div>
+
+        <!-- STEP 1 -->
+        <div class="event-box">
+          <div class="step">1</div>
+
+          <div>
+            <h3>Select Event Type</h3>
+            <select>
+              <option>Training Session</option>
+              <option>Match Day</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="summary">
+          <div class="card">
+            <p>Total Players</p>
+            <h2 id="total">11</h2>
+          </div>
+
+          <div class="card green">
+            <p>Present</p>
+            <h2 id="present">0</h2>
+          </div>
+
+          <div class="card red">
+            <p>Absent</p>
+            <h2 id="absent">0</h2>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="attendance-box">
+          <div class="step">2</div>
+          <h3>Mark Attendance</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>PLAYER NAME</th>
+                <th>POSITION</th>
+                <th>NUMBER</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+
+            <tbody id="players">
+              <!-- PLAYER -->
+              <tr>
+                <td class="player">
+                  <img src="https://i.pravatar.cc/40" />
+                  Liam Smith
+                </td>
+                <td>FORWARD</td>
+                <td>#10</td>
+                <td>
+                  <button class="present-btn" onclick="mark(this, 'present')">
+                    ✔ Present
+                  </button>
+                  <button class="absent-btn" onclick="mark(this, 'absent')">
+                    ✖ Absent
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="player">
+                  <img src="https://i.pravatar.cc/41" />
+                  Noah Johnson
+                </td>
+                <td>MIDFIELDER</td>
+                <td>#8</td>
+                <td>
+                  <button class="present-btn" onclick="mark(this, 'present')">
+                    ✔ Present
+                  </button>
+                  <button class="absent-btn" onclick="mark(this, 'absent')">
+                    ✖ Absent
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <script src="attendance.js"></script>
+  </body>
+</html>

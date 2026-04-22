@@ -1,0 +1,119 @@
+<!-- Team Roster Page -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Team Roster</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>EAGLES FC</h2>
+
+        <nav>
+          <a href="dashboard.html">🏠 Home</a>
+          <a href="team-roster.html" class="active">👥 Team Roster</a>
+          <a href="player.html">⚙️ Player Management</a>
+          <a href="attendance.html">✅ Attendance</a>
+          <a href="match.html">📅 Matches</a>
+          <a href="training.html">🏋️ Training</a>
+          <a href="analytics.html">📊 Analytics</a>
+        </nav>
+
+        <a href="login.html" class="logout">⏻ Logout</a>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main">
+        <!-- TOP BAR -->
+        <div class="topbar">
+          <input type="text" placeholder="Search..." />
+
+          <div class="top-actions">
+            <button class="filter">Filter</button>
+            <button class="add">+ Add Player</button>
+          </div>
+        </div>
+
+        <!-- TITLE -->
+        <h1>Team Roster</h1>
+
+        <!-- TABLE -->
+        <div class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>PLAYER NAME</th>
+                <th>POSITION</th>
+                <th>NUMBER</th>
+                <th>AGE</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="player">
+                  <img src="https://i.pravatar.cc/40" />
+                  Liam Smith
+                </td>
+                <td>FORWARD</td>
+                <td>#10</td>
+                <td>28</td>
+                <td><span class="badge fit">FIT</span></td>
+              </tr>
+
+              <tr>
+                <td class="player">
+                  <img src="https://i.pravatar.cc/41" />
+                  Noah Johnson
+                </td>
+                <td>MIDFIELDER</td>
+                <td>#8</td>
+                <td>25</td>
+                <td><span class="badge fit">FIT</span></td>
+              </tr>
+
+              <tr>
+                <td class="player">
+                  <img src="https://i.pravatar.cc/42" />
+                  Olisah Brown
+                </td>
+                <td>DEFENDER</td>
+                <td>#25</td>
+                <td>25</td>
+                <td><span class="badge injured">INJURED</span></td>
+              </tr>
+
+              <tr>
+                <td class="player">
+                  <img src="https://i.pravatar.cc/43" />
+                  Oliver Brown
+                </td>
+                <td>DEFENDER</td>
+                <td>#90</td>
+                <td>30</td>
+                <td><span class="badge fit">FIT</span></td>
+              </tr>
+
+              <tr>
+                <td class="player">
+                  <img src="https://i.pravatar.cc/44" />
+                  Elijah Davis
+                </td>
+                <td>GOALKEEPER</td>
+                <td>#1</td>
+                <td>22</td>
+                <td><span class="badge fit">FIT</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

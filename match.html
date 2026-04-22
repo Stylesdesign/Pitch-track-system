@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Matches</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>EAGLES FC</h2>
+
+        <nav>
+          <a href="dashboard.html">🏠 Home</a>
+          <a href="team-roster.html">👥 Team Roster</a>
+          <a href="player.html">⚙️ Player Management</a>
+          <a href="attendance.html">✅ Attendance</a>
+          <a href="match.html" class="active">📅 Matches</a>
+          <a href="training.html">🏋️ Training</a>
+          <a href="analytics.html">📊 Analytics</a>
+        </nav>
+
+        <a href="login.html" class="logout">⏻ Logout</a>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <!-- TOPBAR -->
+        <div class="topbar">
+          <input type="text" placeholder="Search matches..." />
+          <button class="add">+ Schedule Match</button>
+        </div>
+
+        <h1>Matches</h1>
+
+        <!-- MATCH LIST -->
+        <div class="match-list">
+          <!-- MATCH CARD -->
+          <div class="match-card">
+            <div class="teams">
+              <span class="home">Eagles FC</span>
+              <span class="vs">VS</span>
+              <span class="away">Lions FC</span>
+            </div>
+
+            <div class="details">
+              <p>📍 Home</p>
+              <p>📅 Dec 18, 2024</p>
+            </div>
+
+            <div class="status upcoming">UPCOMING</div>
+
+            <button class="view-btn">View</button>
+          </div>
+
+          <!-- MATCH CARD -->
+          <div class="match-card">
+            <div class="teams">
+              <span class="home">Eagles FC</span>
+              <span class="vs">VS</span>
+              <span class="away">Tigers FC</span>
+            </div>
+
+            <div class="details">
+              <p>📍 Away</p>
+              <p>📅 Dec 10, 2024</p>
+            </div>
+
+            <div class="status completed">COMPLETED</div>
+
+            <button class="view-btn">Details</button>
+          </div>
+
+          <!-- MATCH CARD -->
+          <div class="match-card">
+            <div class="teams">
+              <span class="home">Eagles FC</span>
+              <span class="vs">VS</span>
+              <span class="away">Sharks FC</span>
+            </div>
+
+            <div class="details">
+              <p>📍 Home</p>
+              <p>📅 Dec 25, 2024</p>
+            </div>
+
+            <div class="status upcoming">UPCOMING</div>
+
+            <button class="view-btn">View</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
