@@ -3,7 +3,7 @@
 A football team management system designed to support team operations including player management, attendance tracking, match scheduling, training sessions, and performance analytics.
 
 ## Technologies Used
--Figma
+- Figma
 - HTML
 - CSS
 - JavaScript
